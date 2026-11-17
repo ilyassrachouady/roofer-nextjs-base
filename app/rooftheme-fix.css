@@ -1,0 +1,96 @@
+body:has(.roofer-preview-original[data-company="roof-by-roof-exteriors"]){--brand-accent:#A65A3B;--brand-ink:#2E2927;--brand-soft:#FAEFE9;--brand-tint:#E8CAB9;--brand-footer:#372720;--accent:#A65A3B;--dark:#2E2927;--warm:#FAEFE9}
+body:has(.roofer-preview-original[data-company="bhinder-exteriors"]){--brand-accent:#C77634;--brand-ink:#283239;--brand-soft:#FAF0E4;--brand-tint:#EED5B8;--brand-footer:#28313B;--accent:#C77634;--dark:#283239;--warm:#FAF0E4}
+body:has(.roofer-preview-original[data-company="ebenezer-roofing"]){--brand-accent:#A37645;--brand-ink:#2A3033;--brand-soft:#F5EDE2;--brand-tint:#E4D1BA;--brand-footer:#293136;--accent:#A37645;--dark:#2A3033;--warm:#F5EDE2}
+body:has(.roofer-preview-original[data-company="friends-roofing"]){--brand-accent:#B56B45;--brand-ink:#30373A;--brand-soft:#FAECE5;--brand-tint:#E9C7B8;--brand-footer:#342F30;--accent:#B56B45;--dark:#30373A;--warm:#FAECE5}
+body:has(.roofer-preview-original[data-company="action-roofing"]){--brand-accent:#C43C3F;--brand-ink:#282328;--brand-soft:#FFF0F1;--brand-tint:#F4CED0;--brand-footer:#442426;--accent:#C43C3F;--dark:#282328;--warm:#FFF0F1}
+body:has(.roofer-preview-original[data-company="hj-roofing"]){--brand-accent:#D38A37;--brand-ink:#20313C;--brand-soft:#FFF3E4;--brand-tint:#EFD3AF;--brand-footer:#263C48;--accent:#D38A37;--dark:#20313C;--warm:#FFF3E4}
+body:has(.roofer-preview-original[data-company="ae-roofing"]){--brand-accent:#356979;--brand-ink:#1A303B;--brand-soft:#EAF3F6;--brand-tint:#D0E4EA;--brand-footer:#213F4A;--accent:#356979;--dark:#1A303B;--warm:#EAF3F6}
+body:has(.roofer-preview-original[data-company="focus-roofing"]){--brand-accent:#2178AE;--brand-ink:#162B40;--brand-soft:#E9F4FA;--brand-tint:#CFE6F4;--brand-footer:#163A50;--accent:#2178AE;--dark:#162B40;--warm:#E9F4FA}
+body:has(.roofer-preview-original[data-company="bricor-roofing"]){--brand-accent:#757148;--brand-ink:#292F2A;--brand-soft:#F2F2E5;--brand-tint:#DDDDBF;--brand-footer:#34392C;--accent:#757148;--dark:#292F2A;--warm:#F2F2E5}
+body:has(.roofer-preview-original[data-company="marchuk-roofing"]){--brand-accent:#A96646;--brand-ink:#263239;--brand-soft:#F8EEE7;--brand-tint:#E6CABB;--brand-footer:#303338;--accent:#A96646;--dark:#263239;--warm:#F8EEE7}
+/* Reliable rendering: full-page screenshots and first-time visits must never show blank sections. */
+body:has(.roofer-preview-original) .rp-motion-ready .rp-reveal,
+body:has(.roofer-preview-original) .rp-reveal,
+body:has(.roofer-preview-original) .rp-motion-ready .rp-reveal:not(.hero img) {
+ opacity:1!important;visibility:visible!important;transform:none!important;
+}
+body:has(.roofer-preview-original) .rp-reveal img,
+body:has(.roofer-preview-original) .reason-section img,
+body:has(.roofer-preview-original) .section-warm img,
+body:has(.roofer-preview-original) .inner-split img{
+ opacity:1!important;visibility:visible!important;transform:none!important
+}
+/* Keep the original Roofer layout, but make color treatment consistent throughout. */
+body:has(.roofer-preview-original) .header .btn.btn-gold,
+body:has(.roofer-preview-original) .btn.btn-gold,
+body:has(.roofer-preview-original) .btn-gold,
+body:has(.roofer-preview-original) .header-cta{
+ background:var(--brand-accent)!important;
+ background-color:var(--brand-accent)!important;
+ border-color:var(--brand-accent)!important;
+ color:#fff!important;
+}
+body:has(.roofer-preview-original) .nav a:hover{color:var(--brand-accent)!important}
+body:has(.roofer-preview-original) .reason-section,
+body:has(.roofer-preview-original) .section-warm,
+body:has(.roofer-preview-original) .rp-branded-warm,
+body:has(.roofer-preview-original) .testimonials-section{
+ background:var(--brand-soft)!important;
+ background-color:var(--brand-soft)!important
+}
+body:has(.roofer-preview-original) .footer,
+body:has(.roofer-preview-original) .rp-custom-footer{
+ background-image:none!important;
+ background-color:var(--brand-tint)!important;
+ color:var(--brand-ink)!important;
+}
+body:has(.roofer-preview-original) .footer *:not(.btn):not(svg) {
+ border-color:color-mix(in srgb,var(--brand-accent),transparent 80%)
+}
+body:has(.roofer-preview-original) .footer p,
+body:has(.roofer-preview-original) .footer h4,
+body:has(.roofer-preview-original) .footer a:not(.btn),
+body:has(.roofer-preview-original) .footer .rp-text-logo{
+ color:var(--brand-ink)!important
+}
+body:has(.roofer-preview-original) .footer .rp-official-logo{
+ filter:none!important
+}
+body:has(.roofer-preview-original) .reason-section svg,
+body:has(.roofer-preview-original) .section-warm svg,
+body:has(.roofer-preview-original) .rp-branded-warm svg,
+body:has(.roofer-preview-original) .rp-branded-warm [class*="icon"],
+body:has(.roofer-preview-original) .faq-item svg{
+ color:var(--brand-accent)!important
+}
+body:has(.roofer-preview-original) .header .rp-text-logo,
+body:has(.roofer-preview-original) .footer .rp-text-logo{
+ display:inline-block!important;font-family:'Plus Jakarta Sans',Arial,sans-serif;
+ font-weight:800!important;letter-spacing:-.06em!important;
+ font-size:clamp(18px,1.7vw,25px)!important;
+ line-height:1.06!important;max-width:225px
+}
+body:has(.roofer-preview-original) .header .rp-official-logo{
+ max-height:60px!important;max-width:190px!important;width:auto!important;object-fit:contain!important
+}
+body:has(.roofer-preview-original) .hero-content h1{
+ text-shadow:0 1px 1px rgba(0,0,0,.07)
+}
+body:has(.roofer-preview-original) section h2,
+body:has(.roofer-preview-original) section h3{
+ visibility:visible!important;opacity:1!important
+}
+body:has(.roofer-preview-original) .rp-example-note{
+ display:block!important;color:var(--brand-ink)!important;opacity:1!important;
+ font-weight:700;padding:5px 0 7px
+}
+@media (max-width:768px){
+ body:has(.roofer-preview-original) .header .rp-text-logo{
+ max-width:150px;font-size:17px!important
+ }
+}
+body:has(.roofer-preview-original) .hero{background-color:color-mix(in srgb,var(--brand-ink) 42%,#a7aba1)!important;}
+body:has(.roofer-preview-original) .ratings .stars:empty{display:none!important;}
+body:has(.roofer-preview-original) .experience strong{font-size:clamp(24px,2.4vw,38px)!important;}
+body:has(.roofer-preview-original) #faq{scroll-margin-top:70px;}
+body:has(.roofer-preview-original) #blog{scroll-margin-top:70px;}
